@@ -1,0 +1,22 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Localization</string>
+
+    <string name="language">English</string>
+
+    <!-- Parametrization of strings - means there is a digit (%d) or a string (%s) before or after a string-->
+
+    <!--Pluralization -->
+    <plurals name="quantity">
+        <item quantity="one"> %d Kнига</item>
+        <item quantity="few"> %d Kниги</item>
+        <item quantity="many"> %d Kниг</item>
+    </plurals>
+
+    <!-- <xliff:g example="1" id="amount"> - description of symbol %d (for technical writer) -->
+    <!--Example: I have 5 books on the shelve -->
+    <plurals name="phrase">
+        <item quantity="one">У меня <xliff:g example="1" id="book_count"> %d </xliff:g>  Kнига на полке номер %d </item>
+        <item quantity="few">У меня <xliff:g example="25" id="book_count"> %d </xliff:g> Kниги на полке номер %d </item>
+        <item quantity="many">У меня <xliff:g example="25" id="book_count"> %d </xliff:g> Kниг на полке номер %d </item>
+    </plurals>
+</resources>

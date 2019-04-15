@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Base application theme.
+     The name attribute, in this case AppTheme, defines the name of the style.
+     The parent attribute, in this case Theme.AppCompat.Light.DarkActionBar,
+     declares the parent style attributes that AppTheme inherits. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- In Android, styles can inherit properties from other styles.
+    You can declare a parent for your style using an optional parent parameter and has the following properties:
+    1.Any style attributes defined by the parent style are automatically included in the child style.
+    2.A style attribute defined in both the parent and child style uses the child style's definition (the child overrides the parent).
+    3.A child style can include additional attributes that the parent does not define.
+    -->
+
+    <!-- New style for all the buttons
+    Setting the parent style to Widget.AppCompat.Button to retain the default attributes of a Button.
+    It also adds an attribute that changes the background of the Drawable -->
+    <style name="ScoreButtons" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:tint">@color/colorPrimary</item>
+    </style>
+
+    <!--Creating style for the plus buttons by extending the ScoreButtons style:-->
+    <style name="PlusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/ic_add</item>
+        <item name="android:contentDescription">@string/plus_button_description</item>
+    </style>
+
+    <!--Creating style for the minus buttons by extending the ScoreButtons style:-->
+    <style name="MinusButtons" parent="ScoreButtons">
+        <item name="android:src">@drawable/ic_remove</item>
+        <item name="android:contentDescription">@string/minus_button_description</item>
+    </style>
+
+    <!--Creating style for the Score text elements:-->
+    <style name="ScoreText" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display3</item>
+    </style>
+
+    <!--Creating style for the Team text elements:-->
+    <style name="TeamText">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Display1
+        </item>
+    </style>
+
+
+    <!-- Base button styles, from standard material buttons. -->
+    <style name="AppTheme.Button" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/default_background</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+</resources>

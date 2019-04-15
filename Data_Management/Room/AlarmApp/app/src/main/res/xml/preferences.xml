@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:defaultValue="@bool/pref_key_time_mode_am_pm_default"
+        android:key="@string/pref_key_time_mode_am_pm"
+        android:summaryOff="@string/pref_key_time_mode_am_pm_summary_off"
+        android:summaryOn="@string/pref_key_time_mode_am_pm_summary_on"
+        android:title="@string/pref_show_24hour_mode_label" />
+
+</PreferenceScreen>

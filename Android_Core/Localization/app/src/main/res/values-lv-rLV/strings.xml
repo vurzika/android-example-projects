@@ -1,0 +1,24 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Localization</string>
+
+    <string name="language">Latviešu</string>
+
+
+    <!-- Parametrization of strings - means there is a digit (%d) or a string (%s) before or after a string-->
+
+
+    <!--Pluralization -->
+    <plurals name="quantity">
+        <item quantity="zero"> %d Grāmatu</item>
+        <item quantity="one"> %d Grāmata</item>
+        <item quantity="other"> %d Grāmatas</item>
+    </plurals>
+
+    <!-- <xliff:g example="1" id="amount"> - description of symbol %d (for technical writer) -->
+    <!--Example: I have 5 books on the shelve -->
+    <plurals name="phrase">
+        <item quantity="zero">Man ir <xliff:g example="1" id="book_count"> %d </xliff:g>  Grāmatu uz plaukta numurs %d </item>
+        <item quantity="one">Man ir <xliff:g example="1" id="book_count"> %d </xliff:g>  Grāmata un plaukta numurs %d </item>
+        <item quantity="other">Man ir <xliff:g example="25" id="book_count"> %d </xliff:g> Grāmatas uz plaukta numurs %d </item>
+    </plurals>
+</resources>

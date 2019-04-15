@@ -1,0 +1,24 @@
+<!-- To add other languages: right click on strings -> Open Translations Editor -->
+
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Localization</string>
+
+    <string name="language">English</string>
+
+    <!-- Parametrization of strings - means there is a digit (%d) or a string (%s) before or after a string-->
+
+    <!--Pluralization -->
+    <plurals name="quantity">
+        <item quantity="one"> %d Book</item>
+        <item quantity="other"> %d Books</item>
+    </plurals>
+
+    <!-- <xliff:g example="1" id="amount"> - description of symbol %d (for technical writer) -->
+    <!--Example: I have 5 books on the shelf -->
+    <plurals name="phrase">
+        <item quantity="one">I have <xliff:g example="1" id="book_count"> %d </xliff:g>  Book on the shelf number %d </item>
+        <item quantity="other">I have <xliff:g example="25" id="book_count"> %d </xliff:g> Books on the shelf number %d </item>
+    </plurals>
+</resources>
+
+

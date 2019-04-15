@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.viktorija.alarmapp.main.MainActivity">
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/time_mode"
+        android:title="24 hour mode"
+        app:showAsAction="never" />
+</menu>
