@@ -1,0 +1,36 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.android.testing.espresso.BasicSample"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        abortOnError false
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+
+    // App dependencies
+    implementation 'androidx.annotation:annotation:1.0.2'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    // Testing-only dependencies
+    androidTestImplementation 'androidx.test:core:1.2.0-alpha03'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1-alpha03'
+    androidTestImplementation 'androidx.test:runner:1.2.0-alpha03'
+    androidTestImplementation 'androidx.test:rules:1.2.0-alpha03'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0-alpha03'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.2.0-alpha03'
+    androidTestImplementation 'androidx.test.ext:truth:1.2.0-alpha03'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1-alpha03'
+}
