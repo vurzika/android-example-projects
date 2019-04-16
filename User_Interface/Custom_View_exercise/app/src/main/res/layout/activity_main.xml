@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.viktorija.customview.MainActivity">
+    <!-- Adding CustomView to the layout -->
+    <!-- Adding custom attribute square_color -->
+    <com.viktorija.customview.MyCustomView
+        android:id="@+id/mcv"
+        android:layout_height="0sp"
+        android:layout_width="300sp"
+        android:layout_weight="1"
+        android:layout_margin="5sp"
+        app:square_color="@color/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/one"
+            android:onClick="onClick"
+            style="?android:attr/buttonBarStyle"
+            android:background="?attr/selectableItemBackground"
+            android:text="CUSTOM PADDING +"/>
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/two"
+            android:onClick="onClick"
+            style="?android:attr/buttonBarStyle"
+            android:background="?attr/selectableItemBackground"
+            android:text="SWAP COLOR"/>
+
+        <Button
+            android:layout_width="0sp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/three"
+            android:onClick="onClick"
+            style="?android:attr/buttonBarStyle"
+            android:background="?attr/selectableItemBackground"
+            android:text="CUSTOM PADDING -"/>
+
+    </LinearLayout>
+
+</LinearLayout>

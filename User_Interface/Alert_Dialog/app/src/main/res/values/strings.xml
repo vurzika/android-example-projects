@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AlertDialog</string>
+    <string name="hello_world_tap_to_test_the_alert">Hello World! Tap to test the alert</string>
+    <string name="alert">Alert</string>
+</resources>
